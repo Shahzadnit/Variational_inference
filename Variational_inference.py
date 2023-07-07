@@ -83,8 +83,8 @@ def update(mu_q,log_sigma_q,i,elbo):
         
     ax1.clear()
     # ax.figure(figsize=(16, 12))
-    # ax1.contourf(X_grid, Y_grid, predicted_dist, cmap='Blues')
-    ax1.contour(X_grid, Y_grid, predicted_dist, levels=25, colors='g', linewidths=1.5, alpha=0.5, label='Estimated Distribution')
+    ax1.contourf(X_grid, Y_grid, predicted_dist, cmap='Blues')
+    # ax1.contour(X_grid, Y_grid, predicted_dist, levels=10, colors='g', linewidths=1.5, alpha=0.5, label='Estimated Distribution')
     ax1.scatter(X[:, 0], X[:, 1], c='r', s=1 ,label='Data')
     ax1.scatter(mu_q[0], mu_q[1], c='b', marker='^', label='Approximate Posterior')
     
